@@ -9,6 +9,7 @@ Welcome to my hardware engineering portfolio! This repository provides insight i
 - [Introduction](#introduction)
 - [Projects](#projects)
 - [Hardware Skills](#skills)
+- [Certifications](#certifications)
 - [Contact](#contact)
 
 ## Introduction
@@ -100,6 +101,22 @@ Description of hardware project 7. The Hardware Biometric System (HBS) is a cutt
   - Performance Monitoring
   - Event Log Analysis
   - System Diagnostics 
+
+## Certifications
+
+I have undertaken training and enrolled in the following certification programs:
+
+- **CompTIA A+**
+  - Completed training and preparing for the exam.
+
+- **CompTIA Network+**
+  - Completed training and preparing for the exam.
+
+- **CCNA (Cisco Certified Network Associate)**
+  - Enrolled in a comprehensive training program for CCNA certification.
+
+- **CCNP (Cisco Certified Network Professional)**
+  - Planning to pursue CCNP certification after completing CCNA.
 
 ## Contact
 
