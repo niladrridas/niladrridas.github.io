@@ -8,7 +8,7 @@ Welcome to my hardware engineering portfolio! This repository provides insight i
 
 - [Introduction](#introduction)
 - [Projects](#projects)
-- [Skills](#skills)
+- [Hardware Skills](#skills)
 - [Contact](#contact)
 
 ## Introduction
@@ -34,6 +34,9 @@ Description of hardware project 5. This project presents a robust implementation
 
 ### Project 6: [Digital Alarm Clock VHDL Project](https://github.com/niladrigithub/digital-alarm-clock-vhdl)
 Description of hardware project 6. This VHDL project implements a digital alarm clock on an FPGA using Xilinx Vivado. The project includes components for clock generation, timekeeping, display control, and alarm logic. The clock supports user inputs for setting the alarm, and the alarm can be snoozed.
+
+### Project 7: [Hardware Biometric System](https://gitlab.com/niladridas/hardware-biometric-system)
+Description of hardware project 7. The Hardware Biometric System (HBS) is a cutting-edge solution designed to provide secure and reliable identification and authentication for individuals and organizations. By integrating biometric features such as fingerprints or facial recognition with advanced security features like encryption and secure communication, the HBS offers a comprehensive solution for user verification and authentication.
 
 ## Skills
 
@@ -65,6 +68,38 @@ Description of hardware project 6. This VHDL project implements a digital alarm 
   - Oscilloscopes
   - Logic Analyzers
   - JTAG Debugging
+
+## Computer Skills
+
+- **Operating Systems:**
+  - Windows
+  - Linux (Red Hat)
+  - MacOS
+
+- **System Administration:**
+  - Active Directory
+  - Group Policy Management
+  - User Account Management
+
+- **Virtualization:**
+  - VMware
+  - VirtualBox
+  - Hyper-V
+
+- **Security:**
+  - Antivirus Management
+  - Firewalls
+  - Security Audits
+
+- **Networking:**
+  - TCP/IP
+  - DNS
+  - DHCP
+
+- **Monitoring and Troubleshooting:**
+  - Performance Monitoring
+  - Event Log Analysis
+  - System Diagnostics 
 
 ## Contact
 
