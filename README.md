@@ -14,7 +14,7 @@ Welcome to my hardware engineering portfolio! This repository provides insight i
 
 ## Introduction
 
-I am a dedicated hardware engineer with expertise in [mention any specific areas like digital design, embedded systems, etc.]. My objective is to contribute to cutting-edge hardware solutions that drive technological advancements.
+I am a dedicated hardware engineer with expertise in computer hardware, digital design, embedded systems, etc. My objective is to contribute to cutting-edge hardware solutions that drive technological advancements.
 
 ## Projects
 
