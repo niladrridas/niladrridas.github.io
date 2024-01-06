@@ -125,6 +125,6 @@ I have undertaken training and enrolled in the following certification programs:
 
 ## Contact
 
-For any inquiries or collaboration opportunities, feel free to contact me via email at [Gmail](mailto:ndas1262000@gmail.com). Connect with me on [LinkedIn](https://www.linkedin.com/in/niladri-das-4a8b3128b/), [X](https://twitter.com/niladri12_) and [GitHub](https://github.com/niladrigithub) to stay updated on my hardware engineering journey.
+For any inquiries or collaboration opportunities, contact me via email at [Gmail](mailto:ndas1262000@gmail.com). Connect with me on [LinkedIn](https://www.linkedin.com/in/niladri-das-4a8b3128b/), [X](https://twitter.com/niladri12_) and [GitHub](https://github.com/niladrigithub) to stay updated on my hardware engineering journey. Also, check my YouTube content related to theory, project, tech and IT [YouTube](https://www.youtube.com/channel/UCBVNlNTMS8FxdwdUN9oZPsg).
 
 Let's create innovative hardware solutions together!
