@@ -129,4 +129,4 @@ For any inquiries or collaboration opportunities, contact me via email at [Gmail
 
 Let's create innovative hardware solutions together!
 
-Download my [CV/Resume](https://mega.nz/file/yiJSRDhb#MGoUTeQENmhHcwOr-q8-iPwvOT3eXVKeVDDMtVYgY4Y). 
+Download my [CV/Resume](https://mega.nz/file/GrpjzDqQ#2KR5FnT6qTFdureuYNuzrZgqkExlJfLcub7MrpO-ZYY). 
