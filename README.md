@@ -1,4 +1,6 @@
-# My Hardware Engineering Portfolio
+# Niladri Das's Portfolio
+
+<img src="https://github.com/niladrigithub/niladrigithub.github.io/blob/source/1704532381607.jpeg" alt="Profile Picture" width="200">
 
 ## Overview
 
