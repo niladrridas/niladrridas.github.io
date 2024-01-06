@@ -1,6 +1,6 @@
 # Niladri Das's Portfolio
 
-<img src="https://github.com/niladrigithub/niladrigithub.github.io/blob/source/1704532381607.jpeg" alt="Profile Picture" width="200">
+<img src="https://raw.githubusercontent.com/niladrigithub/niladrigithub.github.io/source/1704532381607.jpeg" alt="Profile Picture" width="200">
 
 ## Overview
 
