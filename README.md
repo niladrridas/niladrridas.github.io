@@ -1,5 +1,7 @@
 # My Hardware Engineering Portfolio
 
+![Profile Picture](https://github.com/niladrigithub/niladrigithub.github.io/blob/source/1704532381607.jpeg)
+
 ## Overview
 
 Welcome to my hardware engineering portfolio! This repository provides insight into my skills, projects, and experiences as a hardware engineer. Explore to learn more about my work in the hardware domain.
