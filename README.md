@@ -1,6 +1,6 @@
 # Niladri Das's Portfolio
 
-<img src="https://raw.githubusercontent.com/niladrigithub/niladrigithub.github.io/source/PSX_20240106_143651.png" alt="Image" width="200">
+<img src="https://raw.githubusercontent.com/niladrigithub/niladrigithub.github.io/source/PSX_20240106_143651.png" alt="Image" width="100">
 
 ## Overview
 
