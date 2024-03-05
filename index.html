@@ -2,6 +2,36 @@
 <html lang="en">
 
 <head>
+    <!-- Add this div where you want to display the network speed indicator -->
+<div id="network-speed-indicator">Loading...</div>
+<!-- Add this script tag after your other script tags -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const networkSpeedIndicator = document.getElementById('network-speed-indicator');
+
+        // Function to update the network speed indicator
+        function updateNetworkSpeedIndicator(downloadSpeed, uploadSpeed) {
+            networkSpeedIndicator.innerHTML = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps<br>Upload Speed: ${uploadSpeed.toFixed(2)} Mbps`;
+        }
+
+        // Function to perform a speed test
+        function performSpeedTest() {
+            // Simulate a speed test (you can replace this with actual speed test logic)
+            const simulatedDownloadSpeed = Math.random() * 100; // Replace with actual download speed
+            const simulatedUploadSpeed = Math.random() * 50; // Replace with actual upload speed
+
+            // Update the network speed indicator
+            updateNetworkSpeedIndicator(simulatedDownloadSpeed, simulatedUploadSpeed);
+        }
+
+        // Trigger the speed test when the page loads (you can trigger it based on user interaction)
+        performSpeedTest();
+
+        // Example: Trigger the speed test every 10 seconds (adjust as needed)
+        setInterval(performSpeedTest, 10000);
+    });
+</script>
+
     <style>
         /* Dark Mode Toggle Button Styles */
         .dark-mode-toggle {
@@ -115,6 +145,7 @@
                     <div class="hero-text">
                         <h1 class="hero-title"> Network Engineer (A+, N+, CCNA, CCNP)</h1>
                         <a href="https://niladrridas.medium.com" class="email-link">View Articles</a>
+                    
                     </div>
                 </div>
             </div>
@@ -143,9 +174,9 @@
                         <li><strong>Full Name :</strong> Niladri Das</li>
                         <li><strong>Country :</strong> India</li>
                         <li><strong>LinkedIn :</strong> <a href="https://in.linkedin.com/in/niladrridas"
-                                style="font-weight: bold; color: #00008B; text-decoration: underline;">LinkedIn Profile</a></li>
+                                style="font-weight: bold; color: #3498db; text-decoration: underline;">LinkedIn Profile</a></li>
                         <li><strong>Email :</strong> <a href="mailto:niladri.das@lpu.in"
-                                style="font-weight: bold; color: #00008B; text-decoration: underline;">LPU's Registered Email</a></li>
+                                style="font-weight: bold; color: #3498db; text-decoration: underline;">LPU's Registered Email</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 mx-auto col-md-6 col-12">
@@ -384,7 +415,7 @@
                 <div class="mx-auto col-lg-4 col-md-6 col-12">
                     <h3 class="my-4 pt-4 pt-lg-0">Say hello on LinkedIn</h3>
 
-                    <p>Tap any of the boxes for more accounts: </p>
+                    <p>Tap any of the shapes for more links: </p>
 
                     </a>
                     </p>
