@@ -2,6 +2,53 @@
 <html lang="en">
 
 <head>
+    <style>
+        /* Dark Mode Toggle Button Styles */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+    
+        .toggle-label {
+            display: block;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            position: relative;
+        }
+    
+        .toggle-label:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: transform 0.3s ease;
+        }
+    
+        input[type="checkbox"]:checked + .toggle-label:before {
+            transform: translateX(20px);
+        }
+    </style>
+    
+    <style>
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+    
+        body.dark-mode a {
+            color: #00f;
+        }
+    </style>
+    
     <title>Niladri Das</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -358,6 +405,39 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+
+<!-- Dark Mode Toggle Button -->
+<div class="dark-mode-toggle">
+    <input type="checkbox" id="dark-mode-checkbox">
+    <label for="dark-mode-checkbox" class="toggle-label"></label>
+</div>
+
+<!-- JavaScript for Dark Mode Toggle -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const darkModeToggle = document.getElementById('dark-mode-checkbox');
+        const body = document.body;
+
+        // Check the user's preference in local storage
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+        // Set initial dark mode based on user's preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+
+        // Toggle dark mode when the checkbox is clicked
+        darkModeToggle.addEventListener('change', function () {
+            body.classList.toggle('dark-mode');
+            const darkModeEnabled = body.classList.contains('dark-mode');
+
+            // Save user's preference in local storage
+            localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+        });
+    });
+</script>
+
 
 </body>
 
