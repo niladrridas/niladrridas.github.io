@@ -2,35 +2,37 @@
 <html lang="en">
 
 <head>
-    <!-- Add this div where you want to display the network speed indicator -->
-<div id="network-speed-indicator">Loading...</div>
-<!-- Add this script tag after your other script tags -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const networkSpeedIndicator = document.getElementById('network-speed-indicator');
-
-        // Function to update the network speed indicator
-        function updateNetworkSpeedIndicator(downloadSpeed, uploadSpeed) {
-            networkSpeedIndicator.innerHTML = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps<br>Upload Speed: ${uploadSpeed.toFixed(2)} Mbps`;
-        }
-
-        // Function to perform a speed test
-        function performSpeedTest() {
-            // Simulate a speed test (you can replace this with actual speed test logic)
-            const simulatedDownloadSpeed = Math.random() * 100; // Replace with actual download speed
-            const simulatedUploadSpeed = Math.random() * 50; // Replace with actual upload speed
-
-            // Update the network speed indicator
-            updateNetworkSpeedIndicator(simulatedDownloadSpeed, simulatedUploadSpeed);
-        }
-
-        // Trigger the speed test when the page loads (you can trigger it based on user interaction)
-        performSpeedTest();
-
-        // Example: Trigger the speed test every 10 seconds (adjust as needed)
-        setInterval(performSpeedTest, 10000);
-    });
-</script>
+    <ul>
+        <!-- Add this div where you want to display the network speed indicator -->
+        <div id="network-speed-indicator">Loading...</div>
+        <!-- Add this script tag after your other script tags -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const networkSpeedIndicator = document.getElementById('network-speed-indicator');
+        
+                // Function to update the network speed indicator
+                function updateNetworkSpeedIndicator(downloadSpeed, uploadSpeed) {
+                    networkSpeedIndicator.innerHTML = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps<br>Upload Speed: ${uploadSpeed.toFixed(2)} Mbps`;
+                }
+        
+                // Function to perform a speed test
+                function performSpeedTest() {
+                    // Simulate a speed test (you can replace this with actual speed test logic)
+                    const simulatedDownloadSpeed = Math.random() * 100; // Replace with actual download speed
+                    const simulatedUploadSpeed = Math.random() * 50; // Replace with actual upload speed
+        
+                    // Update the network speed indicator
+                    updateNetworkSpeedIndicator(simulatedDownloadSpeed, simulatedUploadSpeed);
+                }
+        
+                // Trigger the speed test when the page loads (you can trigger it based on user interaction)
+                performSpeedTest();
+        
+                // Example: Trigger the speed test every 10 seconds (adjust as needed)
+                setInterval(performSpeedTest, 10000);
+            });
+        </script>
+    </ul>
 
     <style>
         /* Dark Mode Toggle Button Styles */
@@ -80,6 +82,7 @@
         body.dark-mode a {
             color: #00f;
         }
+        
     </style>
     
     <title>Niladri Das</title>
@@ -128,7 +131,7 @@
                     </li>
                 </ul>
                 <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="https://drive.google.com/file/d/1JHqdkNzV0Uxy-5fCxDWfaTMG9iEpp1hL/view?usp=sharing" class="custom-btn btn" download>Resume</a>
+                    <a href="#" class="custom-btn btn" download>Updating Soon!</a>
                 </div>
             </div>
         </div>
@@ -190,7 +193,8 @@
 
             <!-- Niladri's Skills -->
             <div class="row about-third">
-                <ul><h2>Niladri's Skills</h2>
+                <ul>
+                    <h2>Niladri's Skills</h2>
                     <div class="row">
                         <!-- Data Structures & Algorithms -->
                         <div class="col-lg-4 col-md-4 col-12">
@@ -226,8 +230,10 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <h3>Machine Learning</h3>
                             <p>Niladri is a key player in the realm of AI, bringing his prowess in machine learning to the table. With Niladri on your team, you'll be harnessing the power of intelligent systems and predictive analytics.</p>
-                        </div>
-                    </ul>
+                        <div>
+                    </div>
+                    
+                </ul>
                 
                 </div>
             </div>
