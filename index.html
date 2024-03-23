@@ -1,87 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <style>
+        /* Center all headings */
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+    </style>
+</head>
+<meta charset="UTF-8">
+
+<body>
+    <title>Niladri Das</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Network Engineer">
+    <meta name="keywords" content="Engineer, IT, Full Stack Developer">
+    <meta name="author" content="Niladri Das">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</body>
+</html>
 
 <head>
-    <ul>
-        <!-- Add this div where you want to display the network speed indicator -->
-        <div id="network-speed-indicator">Loading...</div>
-        <!-- Add this script tag after your other script tags -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const networkSpeedIndicator = document.getElementById('network-speed-indicator');
-        
-                // Function to update the network speed indicator
-                function updateNetworkSpeedIndicator(downloadSpeed, uploadSpeed) {
-                    networkSpeedIndicator.innerHTML = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps<br>Upload Speed: ${uploadSpeed.toFixed(2)} Mbps`;
-                }
-        
-                // Function to perform a speed test
-                function performSpeedTest() {
-                    // Simulate a speed test (you can replace this with actual speed test logic)
-                    const simulatedDownloadSpeed = Math.random() * 100; // Replace with actual download speed
-                    const simulatedUploadSpeed = Math.random() * 50; // Replace with actual upload speed
-        
-                    // Update the network speed indicator
-                    updateNetworkSpeedIndicator(simulatedDownloadSpeed, simulatedUploadSpeed);
-                }
-        
-                // Trigger the speed test when the page loads (you can trigger it based on user interaction)
-                performSpeedTest();
-        
-                // Example: Trigger the speed test every 10 seconds (adjust as needed)
-                setInterval(performSpeedTest, 10000);
-            });
-        </script>
-    </ul>
+    <div style="display: flex; justify-content: center;">
+        <ul>
+            <!-- Add this div where you want to display the network speed indicator -->
+            <div id="network-speed-indicator">Loading...</div>
+            <!-- Add this script tag after your other script tags -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const networkSpeedIndicator = document.getElementById('network-speed-indicator');
+            
+                    // Function to update the network speed indicator
+                    function updateNetworkSpeedIndicator(downloadSpeed, uploadSpeed) {
+                        networkSpeedIndicator.innerHTML = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps<br>Upload Speed: ${uploadSpeed.toFixed(2)} Mbps`;
+                    }
+            
+                    // Function to perform a speed test
+                    function performSpeedTest() {
+                        // Simulate a speed test (you can replace this with actual speed test logic)
+                        const simulatedDownloadSpeed = Math.random() * 100; // Replace with actual download speed
+                        const simulatedUploadSpeed = Math.random() * 50; // Replace with actual upload speed
+            
+                        // Update the network speed indicator
+                        updateNetworkSpeedIndicator(simulatedDownloadSpeed, simulatedUploadSpeed);
+                    }
+            
+                    // Trigger the speed test when the page loads (you can trigger it based on user interaction)
+                    performSpeedTest();
+            
+                    // Example: Trigger the speed test every 10 seconds (adjust as needed)
+                    setInterval(performSpeedTest, 10000);
+                });
+            </script>
+        </ul>
+    </div>
 
     <style>
         /* Dark Mode Toggle Button Styles */
         .dark-mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            cursor: pointer;
-            transition: top 0.3s ease;
-        }
-        
-        .dark-mode-toggle.hide {
-            top: -50px;
-        }
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: top 0.3s ease;
+  background-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        .toggle-label {
-            display: block;
-            width: 40px;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 10px;
-            position: relative;
-        }
+.dark-mode-toggle.hide {
+  top: -50px;
+}
 
-        .toggle-label:before {
-            content: '';
-            width: 18px;
-            height: 18px;
-            background-color: #fff;
-            border-radius: 50%;
-            position: absolute;
-            top: 1px;
-            left: 1px;
-            transition: transform 0.3s ease;
-        }
+.toggle-label {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
 
-        input[type="checkbox"]:checked + .toggle-label:before {
-            transform: translateX(20px);
-        }
+.toggle-label:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
 
-        body.dark-mode {
-            background-color: #222;
-            color: #fff;
-        }
+input[type="checkbox"]:checked + .toggle-label:before {
+  transform: translate(-50%, -50%) rotate(-180deg);
+}
 
-        body.dark-mode a {
-            color: #00f;
-        }
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #00f;
+}
         
     </style>
     
@@ -191,54 +228,54 @@
             </div>
         </div>
         
-            <!-- Niladri's Skills -->
-            <div class="row about-third">
-                <ul>
-                    <h2>Niladri's Skills</h2>
-                    <div class="row">
-                        <!-- Data Structures & Algorithms -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Microprocessor & RAM</h3>
-                            <p>With over three years now Niladri has utilised many depth concepts of Microprocessors and RAMs with semiconductor storage/technology and researched about nanotechnology and transistors.</p>
-                        </div>
-    
-                        <!-- Embedded Systems -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Embedded Systems</h3>
-                            <p>He's a dedicated learner and an innovative problem solver, making him the perfect candidate to drive excellence in your embedded software and hardware projects.</p>
-                        </div>
-    
-                        <!-- Linux Administration -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Linux Administration</h3>
-                            <p>Niladri possesses expertise in Linux administration. His systematic approach to troubleshooting ensures your Linux systems are always stable, secure, and running smoothly.</p>
-                        </div>
-    
-                        <!-- Full Stack Development -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Full Stack Development</h3>
-                            <p>Niladri bridges the gap between front-end and back-end development like a pro! Expect seamless and efficient results in your end-to-end web development projects.</p>
-                        </div>
-    
-                        <!-- Natural Language Processing (NLP) -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Natural Language Processing (NLP)</h3>
-                            <p>His expertise in chatbots, sentiment analysis, and language translation makes him an invaluable asset for projects requiring advanced NLP applications.</p>
-                        </div>
-    
-                        <!-- Machine Learning -->
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h3>Machine Learning</h3>
-                            <p>Niladri is a key player in the realm of AI, bringing his prowess in machine learning to the table. With Niladri on your team, you'll be harnessing the power of intelligent systems and predictive analytics.</p>
-                        <div>
+<!-- SKILLS -->
+    <!-- Niladri's Skills -->
+    <div class="row about-third">
+        <div class="col-lg-12 col-md-12 col-12">
+            <h2>Skills</h2>
+            <div class="row">
+
+                <!-- Software -->
+                <div class="col-lg-4 col-md-4 col-12">
+                    <h3>Software</h3>
+                    <p>With relevant knowledge in C++, Java, and Python built on the Django framework.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
-                    
-                </ul>
-                
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- End of About Me Section -->
+
+<!--- Start of Projects Section --> 
+<section class="row about-second" id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-5 text-center">Smart Portable Computer</h3>
+                <p>The Smart Portable Computer is a project fully made with Raspberry Pi. It is a compact and portable computer that offers a wide range of features and functionalities. Here are the specifications and buying criteria:</p>
+                <ul>
+                    <li>Processor: Raspberry Pi 4 Model B</li>
+                    <li>RAM: 4GB or 8GB</li>
+                    <li>Storage: MicroSD card</li>
+                    <li>Display: HDMI output</li>
+                    <li>Operating System: Raspberry Pi OS</li>
+                    <li>Connectivity: Wi-Fi and Bluetooth</li>
+                    <li>Power: USB-C power supply</li>
+                    <li>Additional Features: GPIO pins for hardware interfacing, camera module support</li>
+                </ul>
+                <p>You can purchase the Raspberry Pi and other required components from authorized resellers or online platforms like Amazon, Adafruit, or the official Raspberry Pi website.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- End of Projects Section -->
+    
+</section>
 
     <!-- TESTIMONIAL -->
     <section class="testimonials section-padding" id="testimonials">
