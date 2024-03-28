@@ -26,9 +26,39 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="error-template">
-                    <h1>User macOS</h>
+                    <h1>Used macOS to develop</h1>
                     <div class="error-actions">
                         <!-- Removed the "Take Me Home" button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Clock -->
+    <div id="live-clock" style="position: fixed; top: 20px; left: 20px; font-size: 14px;"></div>
+        <h2>Current Time in India:</h2>
+        <h3 id="india-time"></h3>
+    </div>
+
+    <!-- JavaScript to update the live clock -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { timeZone: 'Asia/Kolkata', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            const indiaTime = now.toLocaleString('en-US', options);
+            document.getElementById('india-time').textContent = indiaTime;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+    </script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+</body></html>
                     </div>
                 </div>
             </div>
@@ -231,7 +261,7 @@ body.dark-mode a {
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
                 <h3 class="mb-4">About Niladri</h3>
-                <p>Niladri has finished Electronics and Communication Engineering at <a href="https://www.lpu.in/programmes/engineering/diploma-in-electronics-and-Communications" style="font-weight: bold; color: #FF6600; text-decoration: underline;">Lovely Professional University</a>, Jalandhar, Punjab in May 2022. Expertise areas including:</p>
+                <p>Niladri Das has completed a degree in Electronics and Communication Engineering from <a href="https://www.lpu.in/programmes/engineering/diploma-in-electronics-and-Communications" style="font-weight: bold; color: #FF6600; text-decoration: underline;">Lovely Professional University</a> in Jalandhar, Punjab in May 2022. His areas of expertise include:</p>
                 <ul>
                     <li>Computer Repair</li>
                     <li>Command Line Interface</li>
@@ -241,9 +271,19 @@ body.dark-mode a {
                     <li>Version Control</li>
                     <li>Team Handling</li>
                 </ul>
-                <p>Niladri Das is a tech expert proficient in hardware, Windows OS, Linux, macOS, and network troubleshooting. He's skilled in industry-standard tools like Proteus 8, Vivado, VMware, Packet Tracer and Visual Studio Code. Specializing in network security and quality assurance.</p>
+                <p>Niladri Das is an esteemed tech virtuoso, proficient in the intricate realms of hardware, Windows OS, Linux, macOS, and network troubleshooting. He possesses a profound mastery of industry-standard tools such as Proteus 8, Vivado, VMware, Packet Tracer, and Visual Studio Code. With a specialization in network security and unwavering commitment to quality assurance, Niladri stands as a paragon of excellence in the field.</p>
 
-                <p>Pursuing Cirtificate at <a href="https://cloudnetindia.com/" target="_blank">CloudNet India</a>, and pursuing Computer Hardware, Network Technology/Technician roles.</p>
+<!-- VOCATIONAL TRAINING -->
+    <h3 class="mb-4">Vocational Training</h3>
+    <p>Niladri Das has undergone vocational training in various areas, including:</p>
+    <ul>
+        <li>Web Development</li>
+        <li>Database Management</li>
+        <li>Software Testing</li>
+        <li>Mobile App Development</li>
+        <li>Networking</li>
+    </ul>
+                <p>Pursuing Course and Diploma at <a href="https://cloudnetindia.com/" target="_blank">CloudNet India</a>, and pursuing Hardware A+ and Network Engineer (Networking N+, CCNA 200-301, CCNP Enterprise) roles.</p>
                 <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
                     <li><strong>Full Name :</strong> Niladri Das</li>
                     <li><strong>Location :</strong> Kolkata, India</li>
