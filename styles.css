@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow: auto;
+    position: relative;
+    user-select: text; /* Allow text selection inside code snippets */
+}
+
+.copy-btn {
+    margin-top: 10px;
+}
+
+/* Disable text selection for the whole document except code snippets */
+body *:not(pre) {
+    user-select: none;
+}
+
+/* Style contact icons */
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact-info li img {
+    width: 30px;
+    height: 30px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode pre {
+    background: #333;
+    color: #ddd;
+}
