@@ -46,3 +46,21 @@ document.addEventListener('mousedown', function(e) {
         e.preventDefault();
     }
 });
+
+// Audio functionality
+function toggleAudio(action) {
+    var audio = document.getElementById("audio");
+    var playButton = document.getElementById("playButton");
+
+    if (action === 'play') {
+        audio.play();
+        playButton.textContent = "Pause Audio";
+    } else if (action === 'pause') {
+        audio.pause();
+        playButton.textContent = "Play Audio";
+    } else if (action === 'forward') {
+        audio.currentTime += 10; // Forward 10 seconds
+    } else if (action === 'backward') {
+        audio.currentTime -= 10; // Rewind 10 seconds
+    }
+}
