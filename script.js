@@ -134,6 +134,8 @@ function generateResponse(message) {
         return 'I was made with a Computer Science student named Niladri.';
     } else if (message.toLowerCase().includes('who built this chatbot')) {
         return 'The Entrepreneur & Scientist Elon Musk inspired Niladri to build me.';
+    } else if (message.toLowerCase().includes('love is the answer')) {
+        return 'WE ARE ALIENS.';
     } else if (message.toLowerCase().includes('tell me about niladri')) {
         return 'Niladri is a talented man with a passion for creating innovative projects.';
     } else if (message.toLowerCase().includes('what skills does niladri have')) {
