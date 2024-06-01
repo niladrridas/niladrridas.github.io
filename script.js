@@ -1,33 +1,56 @@
-// Function to detect device type
-function detectDeviceType() {
+// Function to detect device type and model
+function detectDeviceDetails() {
     const userAgent = navigator.userAgent;
-    const mobileDeviceTypes = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+
+    let deviceDetails = '';
 
     // Check if the user agent contains any mobile device type
-    const isMobile = mobileDeviceTypes.some(type => userAgent.includes(type));
+    if (/Macintosh/i.test(userAgent)) {
+        // For Mac devices, include OS and a common screen size
+        deviceDetails = 'Mac Device: macOS';
 
-    if (isMobile) {
-        return 'Mobile';
+        // Approximate screen size for MacBook Air M1
+        deviceDetails += `, Screen Size: 2560 x 1600 (Estimated)`;
     } else {
-        // Check screen width to determine tablet vs desktop
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 768) {
-            return 'Tablet';
-        } else {
-            return 'Desktop';
+        // For non-Mac devices, include OS and screen size
+        deviceDetails = 'Desktop Device: ';
+
+        if (/Windows NT/i.test(userAgent)) {
+            deviceDetails += 'Windows';
+        } else if (/Linux/i.test(userAgent)) {
+            deviceDetails += 'Linux';
         }
+
+        // Use reported screen size
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        deviceDetails += `, Screen Size: ${screenWidth} x ${screenHeight}`;
     }
+
+    return deviceDetails;
 }
 
-// Function to update device type information on the webpage
-function updateDeviceType() {
-    const deviceType = detectDeviceType();
+// Function to update device details information on the webpage
+function updateDeviceDetails() {
+    const deviceDetails = detectDeviceDetails();
     const deviceInfoElement = document.getElementById('device-info');
-    deviceInfoElement.textContent = `Device Type: ${deviceType}`;
+    deviceInfoElement.textContent = `Device Details: ${deviceDetails}`;
 }
 
-// Call the function to update device type information
-updateDeviceType();
+// Call the function to update device details information
+updateDeviceDetails();
+
+
+// Function to update device details information on the webpage
+function updateDeviceDetails() {
+    const deviceDetails = detectDeviceDetails();
+    const deviceInfoElement = document.getElementById('device-info');
+    deviceInfoElement.textContent = `Device Details: ${deviceDetails}`;
+}
+
+// Call the function to update device details information
+updateDeviceDetails();
+
 
 document.getElementById('toggle-mode').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
