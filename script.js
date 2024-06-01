@@ -136,6 +136,8 @@ function generateResponse(message) {
         return 'I\'m known to you but still secret.';
     } else if (message.toLowerCase().includes('alien')) {
         return 'Yes, still helping humanity!';
+    } else if (message.toLowerCase().includes('bye')) {
+        return 'Cool!';
     } else {
         return "Fine, I will tell that later.";
     }
