@@ -1,3 +1,34 @@
+// Function to detect device type
+function detectDeviceType() {
+    const userAgent = navigator.userAgent;
+    const mobileDeviceTypes = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+
+    // Check if the user agent contains any mobile device type
+    const isMobile = mobileDeviceTypes.some(type => userAgent.includes(type));
+
+    if (isMobile) {
+        return 'Mobile';
+    } else {
+        // Check screen width to determine tablet vs desktop
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 768) {
+            return 'Tablet';
+        } else {
+            return 'Desktop';
+        }
+    }
+}
+
+// Function to update device type information on the webpage
+function updateDeviceType() {
+    const deviceType = detectDeviceType();
+    const deviceInfoElement = document.getElementById('device-info');
+    deviceInfoElement.textContent = `Device Type: ${deviceType}`;
+}
+
+// Call the function to update device type information
+updateDeviceType();
+
 document.getElementById('toggle-mode').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     this.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
