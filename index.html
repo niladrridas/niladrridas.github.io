@@ -148,6 +148,23 @@ if __name__ == "__main__":
     <p id="device-info">Detecting device type...</p>
 </section>
     </main>
+
+<!-- Chatbot toggle button -->
+<button id="chat-button">Speak to Chatbot</button>
+
+<!-- Chatbot container -->
+<div id="chatbot-container">
+    <!-- Close button -->
+    <button class="close-button" onclick="toggleChatbot()">X</button>
+
+    <div id="chat-container">
+        <ul id="messages"></ul>
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKeyDown(event)">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+
     <script src="script.js"></script>
     <footer>
         <p>© 2024 Niladri Das. All rights reserved.</p>

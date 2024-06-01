@@ -1,3 +1,138 @@
+/* Chatbot styles */
+#chatbot-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+#chat-container {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    color: black; /* Change font color to white */
+}
+
+
+.bot-message {
+    text-align: left;
+    color: #28a745; /* Green color */
+}
+
+#user-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px 10px 10px;
+    box-sizing: border-box;
+    user-select: text; /* Allow text selection */
+    color: black; /* Change text color to black */
+}
+
+
+
+#send-button {
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+#close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    cursor: pointer;
+}
+
+#close-button:hover {
+    color: #333;
+}
+
+#chatbot-container * {
+    user-select: auto; /* Allow text selection for all chatbot elements */
+}
+
+#chat-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it is above other content */
+}
+
+#chat-button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark mode styles */
+.dark-mode #chatbot-container {
+    background-color: #121212; /* Dark background color */
+    color: white; /* Light text color */
+}
+
+.dark-mode .user-message {
+    color: #ffc107; /* Yellow color */
+}
+
+.dark-mode .bot-message {
+    color: #28a745; /* Green color */
+}
+
+.dark-mode #user-input {
+    border-color: #fff;
+    color: #333;
+    user-select: auto; /* Allow text selection in dark mode */
+}
+
+.dark-mode #send-button {
+    background-color: #ffc107; /* Yellow color */
+    color: #333;
+}
+
+.dark-mode #close-button {
+    color: #fff;
+}
+
+/* Existing styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -44,15 +179,14 @@ pre {
     padding: 1rem;
     overflow: auto;
     position: relative;
-    user-select: text; /* Allow text selection inside code snippets */
 }
 
 .copy-btn {
     margin-top: 10px;
 }
 
-/* Disable text selection for the whole document except code snippets */
-body *:not(pre) {
+/* Disable text selection for the whole document except code snippets and chatbot */
+body *:not(pre):not(#chatbot-container *):not(input) {
     user-select: none;
 }
 
