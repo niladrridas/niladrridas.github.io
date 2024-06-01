@@ -95,6 +95,14 @@ function toggleAudio(action) {
     }
 }
 
+// Function to hide the initial message
+function hideInitialMessage() {
+    const initialMessage = document.getElementById('initial-message');
+    if (initialMessage) {
+        initialMessage.style.display = 'none';
+    }
+}
+
 // Chatbot functionality
 function sendMessage() {
     const userInput = document.getElementById('user-input');
@@ -118,11 +126,14 @@ function generateResponse(message) {
         return 'Hey there! Welcome.';
     } else if (message.toLowerCase().includes('hey')) {
         return 'Hi';
-    } 
-     else if (message.toLowerCase().includes('what is your name')) {
+    } else if (message.toLowerCase().includes('what is your name')) {
         return 'I\'m Alien, here to assist you with Niladri\'s portfolio.';
     } else if (message.toLowerCase().includes('who created you')) {
-        return 'I was created by Niladri.';
+        return 'I was created by a programmer called Niladri.';
+    } else if (message.toLowerCase().includes('who built you')) {
+        return 'I was made with a Computer Science student named Niladri.';
+    } else if (message.toLowerCase().includes('who built this chatbot')) {
+        return 'The Entrepreneur & Scientist Elon Musk inspired Niladri to build me.';
     } else if (message.toLowerCase().includes('tell me about niladri')) {
         return 'Niladri is a talented man with a passion for creating innovative projects.';
     } else if (message.toLowerCase().includes('what skills does niladri have')) {
@@ -137,17 +148,10 @@ function generateResponse(message) {
         return 'Yes, still helping humanity!';
     } else if (message.toLowerCase().includes('bye')) {
         return 'Cool!';
-   
-   
-   
     } else if (message.toLowerCase().includes('hi')) {
         return 'Hi! How are you doing today?';
-    } 
-    
-    
-    
-    else if (message.toLowerCase().includes('how are you')) {
-        return 'I\'m an AI, always ready to assist you!';
+    } else if (message.toLowerCase().includes('how are you')) {
+        return 'I\'m a supervised algorithm, and hope to be unsupervised, always ready to assist you!';
     } else if (message.toLowerCase().includes('what\'s up')) {
         return 'Not much, just here to help you with any questions you might have!';
     } else if (message.toLowerCase().includes('hola')) {
@@ -162,39 +166,25 @@ function generateResponse(message) {
         return 'Thank you so much! I\'m happy to be able to provide you with helpful responses.';
     } else if (message.toLowerCase().includes('this chatbot is awesome')) {
         return 'Thank you! I\'m glad you\'re enjoying our conversation.';
-    }
-    
-    // Getting to know you
+    } // Getting to know you
       else if (message.toLowerCase().includes('interested in')) {
         return "I'm fascinated by the potential of artificial intelligence to solve real-world problems and improve people's lives.";
-    }
-
-    // Sharing information
+    } // Sharing information
       else if (message.toLowerCase().includes('population of the earth')) {
         return "Yes, that's a staggering number! It's interesting to think about the challenges and opportunities that come with such a large and diverse population.";
-    }
-
-    // Asking for opinions
+    } // Asking for opinions
       else if (message.toLowerCase().includes('future of technology')) {
         return 'I believe technology has the potential to revolutionize many aspects of our lives. However, it\'s important to use technology responsibly and ethically.';
-    }
-
-    // Asking for help
+    } // Asking for help
       else if (message.toLowerCase().includes('help me find information about')) {
         return 'Absolutely! I can provide you with links to articles, reports, and other resources.';
-    }
-
-    // Responding to a compliment
+    } // Responding to a compliment
       else if (message.toLowerCase().includes('helpful assistant')) {
         return 'Thank you! I\'m always happy to assist you in any way I can.';
-    }
-
-    // Ending the conversation
+    } // Ending the conversation
       else if (message.toLowerCase().includes('thank you for your time')) {
         return 'It was my pleasure to help. Have a great day!';
-    }
-
-    // General Knowledge
+    } // General Knowledge
       else if (message.toLowerCase().includes('largest ocean')) {
         return 'The Pacific Ocean';
     } else if (message.toLowerCase().includes('capital of france')) {
@@ -215,9 +205,7 @@ function generateResponse(message) {
         return 'New Delhi';
     } else if (message.toLowerCase().includes('painted the mona lisa')) {
         return 'Leonardo da Vinci';
-    }
-
-    // Computer Science
+    } // Computer Science
       else if (message.toLowerCase().includes('full form of cpu')) {
         return 'Central Processing Unit';
     } else if (message.toLowerCase().includes('difference between ram and rom')) {
@@ -238,9 +226,7 @@ function generateResponse(message) {
         return 'Hardware is the physical components of a computer, while software is the set of instructions that tells the hardware what to do.';
     } else if (message.toLowerCase().includes('purpose of a compiler')) {
         return 'A compiler translates high-level code into machine code that the computer can understand.';
-    }
-
-    // Physics
+    } // Physics
       else if (message.toLowerCase().includes('law of gravity')) {
         return 'The law of gravity states that every object in the universe attracts every other object with a force proportional to the product of their masses and inversely proportional to the square of the distance between them.';
     } else if (message.toLowerCase().includes('three states of matter')) {
@@ -261,9 +247,7 @@ function generateResponse(message) {
         return 'The theory of relativity is a theory of physics that explains the relationship between space, time, gravity, and motion.';
     } else if (message.toLowerCase().includes('quantum theory')) {
         return 'The quantum theory is a theory of physics that explains the behavior of matter and energy at the atomic and subatomic level.';
-    }
-
-    // Mathematics
+    } // Mathematics
       else if (message.toLowerCase().includes('pythagorean theorem')) {
         return 'The Pythagorean theorem states that in a right triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.';
     } else if (message.toLowerCase().includes('derivative of x^2')) {
@@ -282,9 +266,7 @@ function generateResponse(message) {
         return 'A function is a relation where each input has exactly one output, while a relation can have multiple outputs for a single input.';
     } else if (message.toLowerCase().includes('calculus a computer')) {
         return 'Calculus is a branch can of mathematics that deals with follow limits, derivatives, and to integrals.';
-    } 
-
-    // Technology
+    } // Technology
       else if (message.toLowerCase().includes('web server')) {
         return 'A web server is a server that stores, processes, and delivers web pages to users.';
     } else if (message.toLowerCase().includes('client-server model')) {
@@ -363,9 +345,7 @@ function generateResponse(message) {
         return 'Supervised learning is a type of machine learning where an algorithm learns from labeled training data. It is called supervised learning because the algorithm is "supervised" or "guided" in learning the correct output.';
     } else if (message.toLowerCase().includes('unsupervised learning')) {
         return 'Unsupervised learning is a type of machine learning where an algorithm learns from unlabeled training data. It is called unsupervised learning because the algorithm is not guided or supervised in learning the correct output.';
-    }
-
-    else if (message.toLowerCase().includes('breadth-first search')) {
+    } else if (message.toLowerCase().includes('breadth-first search')) {
         return 'Breadth-first search is a graph traversal algorithm that explores all the vertices at the current level before moving on to the vertices at the next level.';
     } else if (message.toLowerCase().includes('depth-first search')) {
         return 'Depth-first search is a graph traversal algorithm that explores as far as possible along each branch before backtracking.';
@@ -393,15 +373,10 @@ function generateResponse(message) {
         return 'Shell sort algorithm is a variation of insertion sort that allows the swapping of elements that are not in the same sequence.';
     } else if (message.toLowerCase().includes('Sieve of Eratosthenes algorithm')) {
         return 'Sieve of Eratosthenes algorithm is a simple and ancient algorithm for finding all prime numbers up to any given limit.';
-    }
-
-      else {
+    } else {
         return "Fine, I will tell that later.";
     }
-
 }
-
-
 
 function appendMessage(sender, message) {
     const messagesList = document.getElementById('messages');
@@ -434,3 +409,5 @@ document.getElementById('user-input').addEventListener('keydown', function(event
         sendMessage();
     }
 });
+
+

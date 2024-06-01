@@ -158,11 +158,15 @@ if __name__ == "__main__":
     <button class="close-button" onclick="toggleChatbot()">X</button>
 
     <div id="chat-container">
+        <div id="initial-message">
+            This chatbot response includes all the greetings, general knowledge, computer science, physics, mathematics, and personal information responses. You can ask questions on these topics to interact with the chatbot.
+        </div>
         <ul id="messages"></ul>
     </div>
-    <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKeyDown(event)">
+    <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKeyDown(event)" onfocus="hideInitialMessage()">
     <button onclick="sendMessage()">Send</button>
 </div>
+
 
 
     <script src="script.js"></script>

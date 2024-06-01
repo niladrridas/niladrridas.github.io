@@ -18,6 +18,17 @@
     padding: 10px;
 }
 
+#initial-message {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dark-mode #initial-message {
+    color: #ddd;
+}
+
 #messages {
     list-style-type: none;
     padding: 0;
