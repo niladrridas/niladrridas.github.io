@@ -22,23 +22,9 @@ body {
     border-radius: 10px; /* added a border radius for a silky look */
 }
 
-.contact {
-    background-color: #fff; /* added a white background for a clean look */
-    padding: 2rem; /* added padding for a more modern feel */
-    border: 1px solid #ddd; /* added a border for a flick look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* added a more prominent shadow for shine */
-}
-
-.project {
-    background-color: #fff; /* added a white background for a clean look */
-    padding: 2rem; /* added padding for a more modern feel */
-    border: 1px solid #ddd; /* added a border for a flick look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* added a more prominent shadow for shine */
-    border-radius: 20px; /* added a larger border radius for a more dramatic look */
-}
-
 footer {
     background-color: #f8f9fa;
     padding: 2rem; /* added padding for a more modern feel */
     border-top: 1px solid #ddd; /* added a border for a flick look */
+    text-align: center; /* added text alignment to center the LinkedIn icon */
 }
